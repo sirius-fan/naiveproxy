@@ -1,5 +1,9 @@
 # NaïveProxy ![build workflow](https://github.com/klzgrad/naiveproxy/actions/workflows/build.yml/badge.svg)
 
+
+add multi-config 
+
+
 NaïveProxy uses Chromium's network stack to camouflage traffic with strong censorship resistence and low detectablility. Reusing Chrome's stack also ensures best practices in performance and security.
 
 The following traffic attacks are mitigated by using Chromium's network stack:

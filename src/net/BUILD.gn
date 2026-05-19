@@ -2055,6 +2055,8 @@ executable("naive") {
     "tools/naive/naive_command_line.h",
     "tools/naive/naive_config.cc",
     "tools/naive/naive_config.h",
+    "tools/naive/naive_multi_config.cc",
+    "tools/naive/naive_multi_config.h",
     "tools/naive/naive_connection.cc",
     "tools/naive/naive_connection.h",
     "tools/naive/naive_padding_framer.cc",

@@ -64,6 +64,7 @@
 #include "net/third_party/quiche/src/quiche/quic/core/quic_versions.h"
 #include "net/tools/naive/naive_command_line.h"
 #include "net/tools/naive/naive_config.h"
+#include "net/tools/naive/naive_multi_config.h"
 #include "net/tools/naive/naive_protocol.h"
 #include "net/tools/naive/naive_proxy.h"
 #include "net/tools/naive/naive_proxy_delegate.h"
@@ -426,6 +427,10 @@ int main(int argc, char* argv[]) {
   if (config_dict.contains("version")) {
     std::cout << "naive " << version_info::GetVersionNumber() << std::endl;
     exit(EXIT_SUCCESS);
+  }
+
+  if (!net::ExpandMultiTunnelConfig(config_dict)) {
+    return EXIT_FAILURE;
   }
 
   net::NaiveConfig config;

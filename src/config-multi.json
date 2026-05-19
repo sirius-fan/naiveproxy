@@ -1,0 +1,18 @@
+{
+  "tunnels": [
+    {
+      "listen": "socks://127.0.0.1:1080",
+      "proxy": "https://user1:pass1@server1.example.com"
+    },
+    {
+      "listen": "http://127.0.0.1:1081",
+      "proxy": "https://user2:pass2@server2.example.com"
+    },
+    {
+      "listen": "socks://127.0.0.1:1082",
+      "proxy": "https://hop1.example.com,https://user:pass@hop2.example.com"
+    }
+  ],
+  "log": "",
+  "no-post-quantum": false
+}
